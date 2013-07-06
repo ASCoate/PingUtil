@@ -11,8 +11,8 @@
     <div class="page">
 
         <div id="header">
-            <div id="title">
-                <h1>My MVC Application</h1>
+            <div id="title" align="center">
+                <h1>Ping Util</h1>
             </div>
               
         </div>

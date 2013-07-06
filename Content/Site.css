@@ -5,3 +5,17 @@
     color:#444444;
     
     }
+    
+.page, header
+ {
+ position:absolute;
+ top:40%;
+ left:37%;
+ right:37%;
+ margin-top: -200px;
+ height:15%;
+ width:25%;
+ background-color:#079364;
+ margin:0 auto;
+
+ }

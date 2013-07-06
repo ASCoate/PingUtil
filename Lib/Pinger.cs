@@ -46,5 +46,17 @@ namespace PingUtil.Lib
 
         }
 
+        public static Dictionary<string, string> GetDepots()
+        {   
+            return new Dictionary<string, string>
+            {
+                {"google1", "173.194.45.78"},
+                {"google2", "173.194.45.78"},
+                {"google3", "173.194.45.78"},
+                {"google4", "173.194.45.78"},
+                {"google5", "173.194.45.78"}
+            };
+        }
     }
 }
+

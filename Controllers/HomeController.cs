@@ -15,14 +15,13 @@ namespace PingUtil.Controllers
     {
         public ActionResult Index()
         {
+
+            ViewData["Depots"] = Pinger.GetDepots();
             //This function is run when /Home/Index is requested
 
                   return View();
         }
-
-
-
-
+        
 
         [HttpPost]
         public ActionResult Index(string ip, int times)
@@ -39,6 +38,7 @@ namespace PingUtil.Controllers
             ViewData["Results"] = results;
             ViewData["Times"] = times;
             ViewData["HostName"] = ip;
+            ViewData["Depots"] = Pinger.GetDepots();
             
             //This function is run when /Home/Index is requested
 
