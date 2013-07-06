@@ -17,16 +17,18 @@ namespace PingUtil.Controllers
         {
 
             ViewData["Depots"] = Pinger.GetDepots();
-            //This function is run when /Home/Index is requested
+            ViewData["Times"] = "4";
 
                   return View();
         }
         
-
         [HttpPost]
-        public ActionResult Index(string ip, int times)
+        public ActionResult Index(string ip, int? times)
         {
-
+            if (!times.HasValue)
+            {
+                times = 4;
+            }
             var results = new List<string>();
 
             for (var i = 0; i < times; i++)
